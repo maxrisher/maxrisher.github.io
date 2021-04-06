@@ -1,6 +1,18 @@
 body{
     background: rgba(255, 244, 216, 1);
 }
-h1 {
-    color:aqua;
+.mainDiv{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+}
+h1{
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid rgba(156, 197, 161, 1);
 }
