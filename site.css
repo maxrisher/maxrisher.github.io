@@ -2,17 +2,29 @@ body{
     background: rgba(255, 244, 216, 1);
 }
 .mainDiv{
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 550px;
+    margin-right: 550px;
     margin-top: 1%;
     margin-bottom: 10%;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
 }
 h1{
-    text-align: center;
+    text-align: left;
+    font-weight: 700;
+}
+h1 > a{
+    color: #333333;
+    text-decoration: underline;
+    text-decoration-color: rgb(138, 177, 250);
 }
 img{
-    display: block;
+    display: block; 
     margin-left: auto;
     margin-right: auto;
     border: 8px solid rgba(156, 197, 161, 1);
+}
+p{
+    font-size: 16pt;
+    font-weight: 400;
 }
