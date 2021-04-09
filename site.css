@@ -2,10 +2,6 @@ body{
     background: rgba(255, 244, 216, 1);
 }
 .mainDiv{
-    margin-left: 37%;
-    margin-right: 37%;
-    margin-top: 1%;
-    margin-bottom: 10%;
     font-family: 'Raleway', sans-serif;
     color: #333333;
 }
@@ -28,3 +24,13 @@ p{
     font-size: 16pt;
     font-weight: 400;
 }
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .mainDiv{
+        margin-left: 37%;
+        margin-right: 37%;
+        margin-top: 1%;
+        margin-bottom: 10%;
+    }
+  }
