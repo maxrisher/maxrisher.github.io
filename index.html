@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <!--Mobile stylesheet-->
-    <link rel="stylesheet" media="screen and (max-width 1080px)" type="text/css" href="mobile.css">
-    <!--Desktop stylesheet-->
-    <link rel="stylesheet" media="screen and (min-width: 1081px)" type="text/css" href="desktop.css">
+    <!--Mobile stylesheet 425  or somethings like -->
+    <link rel="stylesheet" href="mobile.css">
+    <!--Import raleway font-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
     </style>
     
 </head>
+<!--Name of the site on a tab-->
 <title>
     Max Risher
 </title>
@@ -20,12 +20,8 @@
         <h1>
             Hey there 👋🏼, my name is <a href=#>Max Risher</a>. Nice to meet you.
         </h1>
-<!--image displayed for mobile
-        <img media="screen and (max-width: 1080px)" src="img/Max Portrait.png" alt="Max Portrait" style="width:100px;height:100px;">
-        image displayed for desktop
-        <img media="screen and (min-width: 1081px)" src="img/Max Portrait.png" alt="Max Portrait" style="width:800px;height:800px;">
--->
-        <img media="screen and (max-width: 1080px)" src="img/Max Portrait.png" alt="Max Portrait" style="width:100px;height:100px;">
+        <!--Portrait of myself (stay humble 😤)-->
+        <img media="screen and (max-width: 1080px)" src="img/Max Portrait.png" alt="Max Portrait" style="width:400px;height:400px;">
         <div class="body">
             <p>
                 I’m a first year student at Oxford getting a degree in Philosophy, Politics, and Economics.
@@ -52,15 +48,12 @@
         <footer>
             <p id="updatingDate">
             </p>
-            <p>
-                Made in Colorado 🏔️
-            </p>
         </footer>
+        <!--updates the year of copyright to be the current year-->
         <script>
             var d = new Date();
-            document.getElementById("updatingDate").innerHTML = "© Max Risher " + d.getFullYear();
+            document.getElementById("updatingDate").innerHTML = "© Max Risher " + d.getFullYear() + " | last updated 4.10.21 in Sierra Madre Tower 1";
         </script>
     </div>
 </body>
-
 </html>
