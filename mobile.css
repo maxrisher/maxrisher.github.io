@@ -1,0 +1,43 @@
+body{
+    background: rgba(255, 244, 216, 1);
+    font-size: 16pt;
+    font-weight: 400;
+}
+.mainDiv{
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+h1{
+    text-align: left;
+    font-weight: 700;
+}
+h1 > a{
+    color: #333333;
+    text-decoration: underline;
+    text-decoration-color: rgb(138, 177, 250);
+}
+p > a{
+    color: rgb(138, 177, 250);
+    text-decoration: underline;
+    text-decoration-color: rgb(138, 177, 250);
+}
+img{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid rgba(156, 197, 161, 1);
+}
+footer{
+    text-align: center;
+    line-height: 5px;
+    font-size: 10pt;
+    font-weight: 200;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
