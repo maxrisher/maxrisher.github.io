@@ -11,7 +11,7 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-@media only screen and (min-width:450px) {
+@media only screen and (min-width:5in) {
     .mainDiv{
         margin-left: 37%;
         margin-right: 37%;
@@ -41,15 +41,15 @@ img{
 }
 footer{
     text-align: center;
-    line-height: 20px;
+    line-height: 5px;
     font-size: 10pt;
     font-weight: 200;
 }
-@media only screen and (min-width:450px) {
+/*@media only screen and (min-width:450px) {
     footer{
         line-height: 5px;
     }
-}
+}*/
 img{
     width: 100px;
     height: 100px;
