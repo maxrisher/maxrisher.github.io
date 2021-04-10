@@ -32,12 +32,17 @@ img{
 .body{
     font-size: 16pt;
     font-weight: 400;
+    image-resolution: ;
 }
 footer{
     text-align: center;
     line-height: 5px;
     font-size: 10pt;
     font-weight: 200;
+}
+img{
+    width: 100px;
+    height: 100px;
 }
 
 @media only screen and (min-width: 1081px) {
@@ -50,5 +55,9 @@ footer{
     }
     body{
         background: rgb(128, 98, 22);
+    }
+    img{
+        width: 800px;
+        height: 800px;
     }
   }
