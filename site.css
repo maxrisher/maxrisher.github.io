@@ -40,7 +40,7 @@ footer{
     font-weight: 200;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1081px) {
     /* For desktop: */
     .mainDiv{
         margin-left: 37%;
