@@ -41,9 +41,14 @@ img{
 }
 footer{
     text-align: center;
-    line-height: 5px;
+    line-height: 2px;
     font-size: 10pt;
     font-weight: 200;
+}
+@media only screen and (min-width:450px) {
+    footer{
+        line-height: 5px;
+    }
 }
 img{
     width: 100px;
