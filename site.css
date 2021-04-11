@@ -12,7 +12,7 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-@media screen and (min-width:8in) {
+@media screen and (min-width: 20in) {
     body{
         background: rgb(255, 0, 0);
     }
