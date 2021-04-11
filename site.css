@@ -4,6 +4,10 @@ body{
     font-size: 16pt;
     font-weight: 400;
 }
+@media screen and (min-device-width: 450px) {
+    body{
+        background: rgb(255, 0, 0);
+    }
 .mainDiv{
     font-family: 'Raleway', sans-serif;
     color: #333333;
@@ -12,16 +16,12 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
 }
-@media screen and (min-width: 67.5em) {
-    body{
-        background: rgb(255, 0, 0);
-    }
-    .mainDiv{
+    /*.mainDiv{
         margin-left: 37%;
         margin-right: 37%;
         margin-top: 3%;
         margin-bottom: 3%;
-    }
+    }*/
 }
 h1{
     text-align: left;
