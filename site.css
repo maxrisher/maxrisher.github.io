@@ -1,7 +1,7 @@
 body{
     background: rgba(255, 244, 216, 1);
-    font-size: 16pt;
-    font-weight: 400;
+    font-size: 20pt;
+    font-weight: 500;
 }
 .mainDiv{
     font-family: 'Raleway', sans-serif;
@@ -13,6 +13,7 @@ body{
 }
 h1{
     text-align: left;
+    font-size: 54pt;
     font-weight: 700;
 }
 h1 > a{
