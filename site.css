@@ -44,10 +44,11 @@ img{
 .fab{
     padding: 20px;
     font-size: 38px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 5px;
-    border-radius: 50%;
+    border-radius: 15%;
 }
 .fab:hover {
     opacity: 0.7;
