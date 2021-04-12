@@ -19,7 +19,7 @@ h1{
 h1 > a{
     color: #333333;
     text-decoration: underline;
-    text-decoration-color: rgb(138, 177, 250);
+    text-decoration-color: rgb(250, 138, 138);
 }
 p > a{
     color: rgb(138, 177, 250);
@@ -44,7 +44,7 @@ img{
 .fab{
     padding: 20px;
     font-size: 38px;
-    width: 45px;
+    width: 42px;
     text-align: center;
     text-decoration: none;
     margin: 5px 5px;
