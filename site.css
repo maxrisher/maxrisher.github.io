@@ -19,7 +19,7 @@ h1{
 h1 > a{
     color: #333333;
     text-decoration: underline;
-    text-decoration-color: rgb(250, 138, 138);
+    text-decoration-color: rgb(138, 177, 250);
 }
 p > a{
     color: rgb(138, 177, 250);
