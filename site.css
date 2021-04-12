@@ -16,7 +16,7 @@ h1{
     font-size: 54pt;
     font-weight: 700;
 }
-h1 > a{
+h1 > strong{
     color: #333333;
     text-decoration: underline;
     text-decoration-color: rgb(138, 177, 250);
