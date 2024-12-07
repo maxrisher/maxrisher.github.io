@@ -40,35 +40,60 @@
       <!-- Quick Summary -->
       <div class="mb-12">
         <p class="text-xl text-gray-600">
-          A brief one-paragraph summary of what the project is about and its
-          main achievements or goals.
+          <strong>I made <a class="text-blue-600 hover:text-blue-800" href="http://prepasto.com">Prepasto</a>, an automated calorie tracker</strong>. It takes any text or photo as an input and returns complete nutritional data to the user. Prepasto does this by using large language models (LLMs) to match user inputs to a list of foods in the USDA food database, it then uses LLMs and USDA portion size data to estimate the exact quantity of the food. The calorie tracker runs over WhatsApp. Anyone can WhatsApp +1 (415) 347-6103 to use it.
         </p>
       </div>
 
-      <!-- Main Image -->
-      <div class="mb-12 max-w-full mx-auto">
-        <img
-          src="../assets/images/01_prepasto_main_product_screenshot.png"
-          alt="Project highlight"
+      <!-- Main Video -->
+      <div class="py-2 max-w-lg mx-auto">
+        <video
+          controls
+          autoplay
+          muted
+          loop
           class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
-        />
+        >
+          <source
+            src="../assets/videos/prepasto_basic_functionality_good_aspect_ratio.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
 
       <!-- Content Sections -->
       <div class="space-y-12">
         <!-- Problem -->
         <section>
-          <h2 class="text-2xl font-bold mb-4">The Problem</h2>
+          <h2 class="text-2xl font-bold mb-2">The problem: tedious nutrition tracking</h2>
           <p class="text-gray-600">
-            Describe the problem or challenge that motivated this project.
+            Over the past eight years, I’ve tried on and off to plan and track the nutritional content of my food. In my experience, understanding my nutritional data has been instrumental to achieve my fitness goals. 
+          </p>
+          <br>
+          <p class="text-gray-600">
+            To gain muscle or lose weight, one needs to be in a caloric surplus or deficit. My activity level (calorie burn) is generally consistent week to week. Hence, my calorie balance is mostly a function of what I eat (calorie intake). To gain or lose weight at a steady and sustainable pace, I find it very important to set and meet daily calorie targets. 
+          </p>
+          <br>
+          <p class="text-gray-600">
+            In the past, I’ve used apps like MyFitnessPal and Cronometer to track my calorie intake. However, I’ve always been frustrated by how much time it takes to search for each food in one of these app’s nutritional databases. Furthermore, I find the quality of the data in these databases to be inconsistent. For example, sometimes food items in MyFitnessPal (e.g., ‘pizza’) have radically different, and sometimes incomplete, nutritional values. This adds another layer of complexity to food searching, since I have to identify the ‘correct’ food item.
           </p>
         </section>
 
         <!-- Solution -->
         <section>
-          <h2 class="text-2xl font-bold mb-4">The Solution</h2>
+          <h2 class="text-2xl font-bold mb-2">The solution: Prepasto</h2>
+
+          <!-- Smaller inline image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/01_prepasto_pb_and_eggs_demo.png"
+              alt="Project highlight"
+              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+            />
+          </div>
+
           <p class="text-gray-600">
-            Explain your approach and how you solved the problem.
+            Prepasto aims to make it as simple as possible for you to track what you eat. Logging food is as simple as texting a friend.
           </p>
 
           <!-- Smaller inline video -->
@@ -77,22 +102,7 @@
               controls
               autoplay
               muted
-              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
-            >
-              <source
-                src="../assets/videos/prepasto_basic_functionality_good_aspect_ratio.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
-          <!-- Smaller inline video -->
-          <div class="py-2 max-w-lg mx-auto">
-            <video
-              controls
-              autoplay
-              muted
+              loop
               class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
             >
               <source
@@ -103,6 +113,13 @@
             </video>
           </div>
 
+          <p>
+            You can log a food by either: 
+            <li>Texting Prepasto</li>
+            <li>Narrating a message to Prepasto with speech-to-text on your keyboard</li>
+            <li>Asking Siri to text Prepasto</li>
+            <li>Sending a picture of your food to Prepasto</li>
+          </p>
           <!-- Smaller inline image -->
           <div class="py-2 max-w-lg mx-auto">
             <img
@@ -111,13 +128,17 @@
               class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
             />
           </div>
+          <p>
+            You can text “/stats” to Prepasto to ask it for a visualization of your nutrition over the past 2 weeks, a spreadsheet of all of your meals, and a spreadsheet of your daily nutrient totals. I added a weekly visualization because I find that many calorie trackers fixate too much on <i>daily</i> nutrition goals. In my experience, day-to-day fluctuations are less important than roughly achieving my goals over the <i>week</i>. I also provide users with their complete meal data because I feel strongly that people should be able to easily explore their complete nutrition data.
+          </p>
         </section>
 
-        <!-- Results -->
+        <!-- How it works -->
         <section>
-          <h2 class="text-2xl font-bold mb-4">How it works</h2>
+          <h2 class="text-2xl font-bold mb-2">How it works</h2>
+          
           <p class="text-gray-600">
-            Share the outcomes and impact of your project.
+            Prepasto uses an LLM (GPT-4o at the time of writing) to search the USDA food database for the food items which most closely match the user’s message.
           </p>
 
           <!-- Smaller inline image -->
@@ -128,6 +149,77 @@
               class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
             />
           </div>
+
+          <p>
+            The USDA has the world’s most comprehensive public food database. Above is what an entry in the database looks like (a great video explaining this dataset <a class="text-blue-600 hover:text-blue-800" href="https://www.youtube.com/watch?v=UuN5HXctmYk">here</a>). By design, the ~7k foods and drinks in the USDA database are comprehensive enough to describe the nutritional content of every food eaten by a <a class="text-blue-600 hover:text-blue-800" href="https://www.cdc.gov/nchs/nhanes/index.htm">random sample of ~5k Americans</a>.
+          </p>
+          <br>
+          <p>
+            After estimating the portion size of your food, Prepasto multiplies the grams of food by the nutrient densities from the USDA database to determine calorie and macronutrient values. Prepasto then keeps track of your total calories and macronutrients over time, which helps you monitor your progress towards your goals
+          </p>
+          <br>
+          <p>
+            Prepasto will also detect if a food you mention is a “branded food”. For example,“Trader Joe's spaghetti” is branded but “spaghetti” is not branded. If Prepasto detects a branded food item, it will simply ask an LLM for the nutritional content of that food. This tends to enhance the accuracy, since many specific branded foods are not listed in the USDA nutritional database.
+          </p>
+        </section>
+
+        <!-- How I made this -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">How I made this</h2>
+          <p>
+            I used both a Django server and AWS Lambda functions to build this application. I wanted to separate the basic server operations of reading and replying to user WhatsApp messages from the slow and complex LLM API calls which determine the nutritional content of user meals. By offloading the text to nutrition data processing to AWS Lambda, I made my application easily scalable.
+          </p>
+          <br>
+
+          <h3 class="text-xl font-medium mb-2">Django and PostgreSQL on Railway</h3>
+          <p>
+            The backbone of this project is a Django server with a PostgreSQL database, hosted on <a class="text-blue-600 hover:text-blue-800" href="https://railway.app/">Railway</a>. The server listens for user messages, which come as webhooks from the WhatsApp Cloud API. The server creates and sends simple reply messages to users. It invokes Lambda functions to do the heavy lifting of the application and listens for webhooks which return the outputs of these Lambda functions.
+          </p>
+          <br>
+
+          <h3 class="text-xl font-medium mb-2">Text to nutrition data AWS Lambda function</h3>
+          <p>
+            The workhorse of this application is a Lambda function which uses a series of LLM calls to match each food item in a user’s nutrition log to a respective entry in the USDA food database. This Lambda function uses pandas to search and manipulate a local copy of the USDA database. It also uses asyncio to run the matching operations for each food item in a user’s meal in parallel. This parallelization is crucial, cutting backend meal processing time by ~70% (for a typical meal with four foods).
+          </p>
+        </section>
+
+        <!-- Next steps -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">Next steps</h2>
+          <p>
+            There are a few more features I would love to add. I outline them here.
+          </p>
+          <br>
+          <h3 class="text-xl font-medium mb-2">Duplicate a meal</h3>
+          <p>
+            It would be great to have a feature where users can press a button to duplicate meals rather than having to type them in again / copy paste an old text message. 
+          </p>
+          <br>
+
+          <h3 class="text-xl font-medium mb-2">Edit a meal</h3>
+          <p>
+            It would be great to at least allow users to scale meals up or down. An even more powerful edit function would allow users to simply explain the required meal modifications, with an LLM executing the modifications.
+          </p>
+          <br>
+
+          <h3 class="text-xl font-medium mb-2">Internet search for branded foods</h3>
+          <p>
+            It would be ideal if the branded food nutritional data came directly from the internet so that it was more accurate (e.g., simply search the Kraft website for the nutritional value of Kraft Mac & Cheese). I think LLMs do a good job estimating the nutritional content of the most popular branded foods (e.g., a Cliff Bar). However, it sometimes hallucinates, especially with niche foods (e.g., Trader Joe’s Gingerbread Non-Dairy Oat Creamer).
+          </p>
+          <br>
+
+          <h3 class="text-xl font-medium mb-2">More sophisticated food photo to nutrition data</h3>
+          <p>
+            Currently, the food photo to nutrition data feature first asks an LLM to describe the food photo and estimate portion sizes. Second, it takes this text summary and plugs it into the text to nutrition function. This method works, but it could be improved to more accurately estimate portion sizes and identify foods in step one.
+          </p>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">Conclusion</h2>
+          <p>
+            Thanks for having a look at <a class="text-blue-600 hover:text-blue-800" href="https://www.prepasto.com">Prepasto</a>. I hope other people get some use out of it too. If you have any questions, ideas for how this project could be better, or just thought it was cool, feel free to drop me an email!
+          </p>
         </section>
       </div>
     </div>
