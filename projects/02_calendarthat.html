@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Risher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-700">
+    <!-- Navigation -->
+    <nav class="bg-white sticky z-50 top-0 border-b border-gray-200 py-2">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="../index.html" class="text-gray-700 font-bold text-3xl"
+            >Max Risher</a
+          >
+          <div class="flex space-x-8">
+            <a
+              href="../index.html"
+              class="text-gray-700 hover:text-black transition-colors"
+              >About</a
+            >
+            <a
+              href="../project_list.html"
+              class="text-gray-700 hover:text-black transition-colors"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Project report -->
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <!-- NB: in the same style as main hero section -->
+      <h1 class="text-4xl font-bold text-gray-700 mb-4">CalendarThat</h1>
+      <p>April 27, 2025</p>
+      <br />
+
+      <!-- Quick Summary -->
+      <div class="mb-12">
+        <p class="text-gray-600">
+          <strong
+            >I built an automated calendar event creation tool that lets me
+            attend one more fun event each week</strong
+          >.
+          <br />
+          <br />
+          <a
+            class="text-blue-600 hover:text-blue-800"
+            href="https://github.com/EdFage"
+            >Ed Fage</a
+          >
+          and I built
+          <a
+            class="text-blue-600 hover:text-blue-800"
+            href="https://calendarthat.com"
+            >CalendarThat</a
+          >, an automated calendar event creation tool, to make calendaring
+          easier. We hope that it can make adding to your calendar easier too.
+          <br />
+          <br />
+          CalendarThat takes any text from your browser (emails, highlighted
+          text) or direct input and converts it into calendar events using large
+          language models (LLMs). You can create between 1-10 events from a
+          single input, with an average creation time of just 1.4 ± 0.7 seconds
+          per request.
+        </p>
+      </div>
+
+      <!-- Main Video -->
+      <div class="py-2 max-w-lg mx-auto">
+        <video
+          controls
+          autoplay
+          muted
+          loop
+          class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+        >
+          <source
+            src="../assets/videos/02_calendarthat_demo.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Content Sections -->
+      <div class="space-y-12">
+        <!-- Problem -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">
+            The problem: manual calendaring
+          </h2>
+          <p class="text-gray-600">
+            It's easy to forget. Last week, forgetting to add a neighborhood
+            cookout to my calendar led me to miss the event. Manual event
+            creation has been a minor annoyance in my life ever since I started
+            using Google Calendar six years ago. I believe I could lead an even
+            more interesting life with greater variety if I was able to keep
+            track of more events like this one. This product aims to help enable
+            me to do the things that I want to do by reducing the friction of
+            saving events to my calendar.
+          </p>
+          <br />
+
+          <!-- Example events image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/02_calendarthat_example_events.png"
+              alt="Example events I might want to keep track of"
+              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              Example events I might want to keep track of.
+            </p>
+          </div>
+
+          <p class="text-gray-600">
+            There are existing solutions to streamline calendar event creation
+            and sharing, but they have major limitations.
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://www.addevent.com/"
+              >AddEvent</a
+            >
+            creates "add to calendar" buttons, but most websites don't use them.
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://calendly.com/"
+              >Calendly</a
+            >
+            and
+            <a class="text-blue-600 hover:text-blue-800" href="https://cal.com/"
+              >Cal</a
+            >
+            help share your availability, but work best just for one-on-one
+            meetings.
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://support.google.com/a/users/answer/11387073?hl=en"
+              >Gmail</a
+            >
+            and
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://support.apple.com/guide/iphone/create-and-edit-events-in-calendar-iph3d110f84/ios"
+              >Apple</a
+            >
+            can detect events automatically, but they miss 90% of events you
+            find online.
+          </p>
+        </section>
+
+        <!-- Solution -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">The solution: CalendarThat</h2>
+          <p class="text-gray-600">
+            I wanted a tool that would give me an extremely simple way to create
+            calendar events on my devices, no matter where I found the events.
+            CalendarThat aims to be this tool, by offering three ways to
+            instantly create calendar events: via browser extension, email, and
+            web.
+          </p>
+          <br />
+          <h3 class="text-xl font-medium mb-2">Browser Extension</h3>
+          <p class="text-gray-600">
+            The CalendarThat browser extension (for
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://chromewebstore.google.com/detail/calendarthat/elioiimdkioojfkfkbpjfdmkfgcfipfe"
+              >Chrome</a
+            >
+            and
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://addons.mozilla.org/en-US/firefox/addon/calendarthat/"
+              >Firefox</a
+            >) is my favorite way to create events from my computer. It's become
+            another essential tool in by belt without adding complexity to my
+            life (much like my password manager,
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://bitwarden.com/"
+              >Bitwarden</a
+            >).
+          </p>
+
+          <!-- Browser extension image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/02_calendarthat_browser_extension.png"
+              alt="Example events I might want to keep track of"
+              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              Highlight any text on a webpage, right-click, and select "Create
+              Calendar Event".
+            </p>
+          </div>
+
+          <h3 class="text-xl font-medium mb-2">Web</h3>
+          <p class="text-gray-600">
+            The CalendarThat website is mostly a useful backup for those times
+            when I'm not able to easily highlight text on a webpage, or when I
+            come across an event outside of the browser. It ensures that no
+            matter what I'm doing on my laptop, I'm able to use CalendarThat.
+          </p>
+
+          <!-- Web interface image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/02_calendarthat_web_interface.png"
+              alt="Web interface demo"
+              class="block mx-auto max-w-full max-h-96 rounded-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              Visit
+              <a
+                class="text-blue-600 hover:text-blue-800"
+                href="https://calendarthat.com"
+                >CalendarThat.com</a
+              >
+              to paste any text and instantly generate calendar events.
+            </p>
+          </div>
+
+          <h3 class="text-xl font-medium mb-2">Email</h3>
+          <p class="text-gray-600">
+            The CalendarThat email service is intended to be the most convenient
+            way to create events from your email inbox (the destination for
+            events mailing lists, personal invitations, etc.) and also to enable
+            automated event creation from any device (essentially all personal
+            electronic devices can send emails: iPhones, Android phones, smart
+            watches, etc.).
+          </p>
+
+          <!-- Email interface image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/02_calendarthat_email_interface.png"
+              alt="Email interface demo"
+              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              Forward any email with event information to
+              <a
+                href="mailto:new@calendarthat.com"
+                class="text-blue-600 hover:text-blue-800"
+                >new@calendarthat.com</a
+              >
+              and receive a calendar file (.ics) in seconds.
+            </p>
+          </div>
+        </section>
+
+        <!-- How it works -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">How it works</h2>
+          <p class="text-gray-600">
+            CalendarThat is built with a core Django server and PostgreSQL
+            database which makes API calls to LLM providers and tracks the
+            results. This server receives user input and sends responses via the
+            browser extension, web, and email user interfaces.
+          </p>
+          <br />
+
+          <h3 class="text-xl font-medium mb-2">Django web server</h3>
+          <p class="text-gray-600">
+            CalendarThat is built on a Django server with a PostgreSQL database,
+            hosted on Railway. The system architecture consists of three core
+            Django apps:
+          </p>
+          <br />
+          <ul class="list-disc pl-6">
+            <li>
+              <strong>multiple_event_creator</strong>: Contains the event
+              creation logic
+              <ul class="list-disc pl-6">
+                <li>
+                  <strong>EventBuilder</strong> model: Coordinates the event
+                  creation process
+                </li>
+                <li>
+                  <strong>LlmCaller</strong> class: Interfaces with Gemini 2.0
+                  Flash API to interpret text
+                </li>
+                <li>
+                  <strong>Event</strong> model: Stores and formats calendar data
+                  for export
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>web_interface</strong>: Handles the website and API
+              endpoints
+              <ul class="list-disc pl-6">
+                <li>
+                  Slow LLM API calls are run asynchronously to keep the UI
+                  responsive
+                </li>
+                <li>
+                  Uses Django's async views and asyncio for these and other
+                  non-blocking operations
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>email_interface</strong>: Manages email calendar event
+              sending/receiving via SendGrid
+            </li>
+          </ul>
+          <!-- Email interface image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/Group 23.png"
+              alt="Email interface demo"
+              class="block mx-auto max-w-full max-h-96 rounded-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              The basic processing flow looks like this.
+            </p>
+          </div>
+          <br />
+
+          <h3 class="text-xl font-medium mb-2">Browser extension interface</h3>
+          <p class="text-gray-600">
+            To serve multiple browsers, I built the Chrome and Firefox
+            extensions from a single codebase using Webpack. This allows for
+            cross-browser support with minimal code duplication. Users
+            authenticate themselves with their calendarthat.com cookies. User
+            preferences for Google Calendar, Outlook, and ICS output formats are
+            saved in extension storage.
+          </p>
+          <br />
+
+          <h3 class="text-xl font-medium mb-2">Email interface</h3>
+          <p class="text-gray-600">
+            The email service uses SendGrid's API for bidirectional email
+            communication:
+          </p>
+          <br />
+          <ul class="list-disc pl-6">
+            <li>
+              Receiving emails: users send/forward emails to
+              <a
+                href="mailto:new@calendarthat.com"
+                class="text-blue-600 hover:text-blue-800"
+                >new@calendarthat.com</a
+              >
+              and a SendGrid webhook delivers the email content to our Django
+              server
+            </li>
+            <li>
+              Responding to emails: we send a reply with calendar events using
+              thread references to maintain proper conversation flow in email
+              clients
+            </li>
+          </ul>
+        </section>
+
+        <!-- Next steps -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">Next steps</h2>
+
+          <h3 class="text-xl font-medium mb-2">iOS app interface</h3>
+          <p class="text-gray-600">
+            Calendar event creation on mobile devices is very painful: opening
+            the Google Calendar app and typing with my thumbs is slow and I'm
+            also more likely to be in a rush. Unfortunately, I often encounter
+            interesting events while on my phone (e.g., a text message, an
+            instagram post, a picture of a poster on the street) but lack an
+            easy way to create calendar events. CalendarThat can currently solve
+            some of these use cases via the email interface, but it's clunky.
+          </p>
+          <br />
+          <p class="text-gray-600">
+            Making an iOS interface is a clear next step for CalendarThat.
+          </p>
+
+          <!-- iOS app mockup image -->
+          <div class="py-2 max-w-lg mx-auto">
+            <img
+              src="../assets/images/02_calendarthat_ios_mockup.png"
+              alt="iOS app mockup"
+              class="block mx-auto max-w-full max-h-96 rounded-lg shadow-lg"
+            />
+            <p class="text-gray-600 text-center italic">
+              Making an iOS interface a clear next step for CalendarThat.
+            </p>
+          </div>
+
+          <p class="text-gray-600">A dedicated mobile app would:</p>
+          <ul class="list-disc pl-6">
+            <li>Allow text selection from any app via share extension</li>
+            <li>Support image-to-calendar functionality using OCR</li>
+            <li>
+              Integrate with the google/outlook calendar APIs for direct event
+              creation
+            </li>
+          </ul>
+          <br />
+
+          <h3 class="text-xl font-medium mb-2">Automatic email scanning</h3>
+          <p class="text-gray-600">
+            Rather than requiring users to forward emails to create calendar
+            events, it would be ideal to create calendar events automatically
+            from relevant emails as soon as they enter a user's inbox. An
+            obvious difficulty with such an integration is that it would require
+            handling all / most of the information in a user's inbox, which
+            would be a significant privacy concern for many users.
+          </p>
+          <br />
+
+          <h3 class="text-xl font-medium mb-2">Event complexity triage</h3>
+          <p class="text-gray-600">
+            It would be ideal to handle complex calendar events with a more
+            intelligent/slower LLM and simple events with a less capable but
+            faster LLM. A very sophisticated version of this tool might
+          </p>
+          <ol class="list-decimal pl-6">
+            <li>Create calendar events with a fast LLM, then</li>
+            <li>
+              Asynchronously check its work and make corrections with a slower
+              more intelligent LLM
+            </li>
+          </ol>
+          <br />
+          <p class="text-gray-600">
+            One straightforward triage option would be to create some kind of
+            classification layer on top of user input to decide if some user
+            input is a "complex" or "easy" event to create. The routing could
+            look something like the following:
+          </p>
+          <ul class="list-disc pl-6">
+            <li>
+              Airline flights involving complicated time zone changes -> event
+              creation with GPT o4 mini, or another high quality reasoning model
+            </li>
+            <li>
+              A single event with clear event details -> event creation with
+              Gemini Flash mini, or another very fast model (event creation in
+              ~1.5 seconds, compared to ~5 seconds for GPT o4 mini)
+            </li>
+          </ul>
+        </section>
+
+        <!-- Conclusion -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">Conclusion</h2>
+          <p class="text-gray-600">
+            CalendarThat empowers users to easily track and organize the
+            thousands of exciting events in their lives. Try it
+            <a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://calendarthat.com/"
+              >here</a
+            >!
+          </p>
+          <br />
+          <p class="text-gray-600">
+            I'm always looking for feedback and suggestions to make this tool
+            better (<a
+              class="text-blue-600 hover:text-blue-800"
+              href="https://github.com/maxrisher/calendarthatv2"
+              >GitHub repo</a
+            >). If you have ideas or questions, please reach out!
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+      <div class="max-w-5xl mx-auto border-t border-gray-200">
+        <!-- Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center py-4">
+          <div>
+            <span class="text-gray-600">max [dot] risher@gmail.com</span>
+          </div>
+
+          <div>
+            <a
+              href="https://www.linkedin.com/in/maxrisher/"
+              class="text-gray-600"
+              >LinkedIn</a
+            >
+          </div>
+
+          <div>
+            <a href="https://github.com/maxrisher" class="text-gray-600"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Sub footer -->
+      <div class="max-w-5xl mx-auto border-t border-gray-200 py-4 px-4">
+        <p class="text-center text-sm text-gray-600">
+          Made with ❤️ in SF using HTML and Tailwind
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
